@@ -1,0 +1,15 @@
+@(times: List[Times], timeForm: Form[Times])
+
+@import helper._
+
+@main("Swimming TimeKeeper")
+{
+	<h1>@time.size() time(s)</h1>
+	
+	<h2>Add new time</h2>
+	
+	@form(routes.Application.newTime())
+	{
+		
+	}
+}
