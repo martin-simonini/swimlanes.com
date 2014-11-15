@@ -1,6 +1,7 @@
 package controllers;
 
 import play.*;
+import models.*;
 import play.mvc.*;
 
 import views.html.*;
@@ -30,4 +31,6 @@ public class Application extends Controller {
 	{
 		return redirect(route.Application.times());
 	}
+	
+	static Form<User> taskForm = Form(Task.class);
 }
